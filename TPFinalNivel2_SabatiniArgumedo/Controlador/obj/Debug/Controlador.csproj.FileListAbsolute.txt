@@ -1,0 +1,11 @@
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\bin\Debug\Controlador.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\bin\Debug\Controlador.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\bin\Debug\Conexion.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\bin\Debug\Modelo.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\bin\Debug\Conexion.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\bin\Debug\Modelo.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\obj\Debug\Controlador.csproj.AssemblyReference.cache
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\obj\Debug\Controlador.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Controlador\obj\Debug\Controlador.pdb

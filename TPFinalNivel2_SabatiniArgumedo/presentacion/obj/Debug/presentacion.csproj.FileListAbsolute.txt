@@ -1,0 +1,17 @@
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\presentacion.exe.config
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\presentacion.exe
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\presentacion.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.csproj.AssemblyReference.cache
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.Form1.resources
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.Properties.Resources.resources
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.csproj.GenerateResource.cache
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.csproj.CoreCompileInputs.cache
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.exe
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Conexion.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Controlador.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Modelo.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Conexion.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Controlador.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Modelo.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.csproj.CopyComplete

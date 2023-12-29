@@ -1,0 +1,6 @@
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Conexion\bin\Debug\Conexion.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Conexion\bin\Debug\Conexion.pdb
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Conexion\obj\Debug\Conexion.csproj.AssemblyReference.cache
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Conexion\obj\Debug\Conexion.csproj.CoreCompileInputs.cache
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Conexion\obj\Debug\Conexion.dll
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\Conexion\obj\Debug\Conexion.pdb
