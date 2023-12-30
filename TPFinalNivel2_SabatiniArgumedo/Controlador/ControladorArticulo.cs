@@ -42,12 +42,14 @@ namespace Controlador
                 {
 
                     Articulo articulo = new Articulo();
-                    articulo.Id = (int) reader["Id"];
-                    articulo.Code = (string)reader["Codigo"];
-                    articulo.Name = (string) reader["Nombre"];
-                    articulo.Description = (string) reader["Descripcion"];
-                    articulo.ImgUrl = (string) reader["ImagenUrl"];
-                    articulo.Price = (double) reader["Precio"];
+                    articulo.Id = reader.GetInt32(0);
+                    articulo.Code = reader.GetString(1);
+                    articulo.Name = reader.GetString(2);
+                    articulo.Description = reader.GetString(3);
+                    articulo.ImgUrl = reader.GetString(4);
+                    articulo.Price = Double.Parse(reader.GetSqlMoney(5).ToString()); //Importante investigar este tipo de conversiones entre Sql y C# .NET
+
+                   
 
                     list.Add(articulo);
 
@@ -157,8 +159,8 @@ namespace Controlador
                 connection = Conexion.Conexion.ConexionBD();
 
                 command.CommandType = System.Data.CommandType.Text;
-                command.CommandText = $"INSERT INTO ARTICULOS (Id, Codigo, Nombre, Descripcion, ImagenUrl, Precio, IdMarca, IdCategoria) VALUES " +
-                $"({articulo.Id}, '{articulo.Code}', '{articulo.Name}', '{articulo.Description}', '{articulo.ImgUrl}', {articulo.Price}, {articulo.Marca.Id}, {articulo.Categoria.Id})";
+                command.CommandText = $"INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, ImagenUrl, Precio, IdMarca, IdCategoria) VALUES " +
+                $"('{articulo.Code}', '{articulo.Name}', '{articulo.Description}', '{articulo.ImgUrl}', {articulo.Price}, {articulo.Marca.Id}, {articulo.Categoria.Id})";
 
                 command.Connection = connection;
 

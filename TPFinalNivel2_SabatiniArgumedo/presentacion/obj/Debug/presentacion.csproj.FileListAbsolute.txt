@@ -15,3 +15,4 @@ C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\
 C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Controlador.pdb
 C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\bin\Debug\Modelo.pdb
 C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.csproj.CopyComplete
+C:\Users\FedericoSabatini\Desktop\Proyecto_Final\TPFinalNivel2_SabatiniArgumedo\presentacion\obj\Debug\presentacion.FrmArticulo.resources

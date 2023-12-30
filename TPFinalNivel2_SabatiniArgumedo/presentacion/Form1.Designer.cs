@@ -96,15 +96,14 @@
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(180, 20);
             this.txtFiltro.TabIndex = 5;
-            this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(517, 75);
-            this.pictureBox.MaximumSize = new System.Drawing.Size(213, 189);
-            this.pictureBox.MinimumSize = new System.Drawing.Size(213, 189);
+            this.pictureBox.Location = new System.Drawing.Point(517, 65);
+            this.pictureBox.MaximumSize = new System.Drawing.Size(225, 277);
+            this.pictureBox.MinimumSize = new System.Drawing.Size(225, 277);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(213, 189);
+            this.pictureBox.Size = new System.Drawing.Size(225, 277);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 6;
             this.pictureBox.TabStop = false;
@@ -114,61 +113,65 @@
             this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGrid.Location = new System.Drawing.Point(42, 65);
-            this.dataGrid.MaximumSize = new System.Drawing.Size(415, 214);
-            this.dataGrid.MinimumSize = new System.Drawing.Size(415, 214);
+            this.dataGrid.MaximumSize = new System.Drawing.Size(419, 277);
+            this.dataGrid.MinimumSize = new System.Drawing.Size(419, 277);
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGrid.Size = new System.Drawing.Size(415, 214);
+            this.dataGrid.Size = new System.Drawing.Size(419, 277);
             this.dataGrid.TabIndex = 7;
             this.dataGrid.SelectionChanged += new System.EventHandler(this.dataGrid_SelectionChanged_1);
             // 
             // btnInsert
             // 
-            this.btnInsert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnInsert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsert.Location = new System.Drawing.Point(118, 323);
+            this.btnInsert.Location = new System.Drawing.Point(105, 387);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(92, 43);
             this.btnInsert.TabIndex = 8;
             this.btnInsert.Text = "Agregar";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(267, 323);
+            this.btnUpdate.Location = new System.Drawing.Point(267, 387);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(92, 43);
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Actualizar";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Location = new System.Drawing.Point(414, 323);
+            this.btnDelete.Location = new System.Drawing.Point(420, 387);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(92, 43);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnDetail
             // 
-            this.btnDetail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnDetail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDetail.Location = new System.Drawing.Point(559, 323);
+            this.btnDetail.Location = new System.Drawing.Point(575, 387);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.Size = new System.Drawing.Size(92, 43);
             this.btnDetail.TabIndex = 11;
             this.btnDetail.Text = "Ver Detalle";
             this.btnDetail.UseVisualStyleBackColor = true;
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // btnFiltro
             // 
-            this.btnFiltro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OrangeRed;
+            this.btnFiltro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltro.Location = new System.Drawing.Point(686, 13);
             this.btnFiltro.Name = "btnFiltro";
@@ -182,8 +185,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(773, 424);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(767, 471);
             this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.btnDelete);
@@ -197,8 +200,8 @@
             this.Controls.Add(this.lblFiltro);
             this.Controls.Add(this.lblCriterio);
             this.Controls.Add(this.lblCampo);
-            this.MaximumSize = new System.Drawing.Size(789, 463);
-            this.MinimumSize = new System.Drawing.Size(789, 463);
+            this.MaximumSize = new System.Drawing.Size(783, 510);
+            this.MinimumSize = new System.Drawing.Size(783, 510);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "App_Catalogo";

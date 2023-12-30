@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelo;
 using Controlador;
+using System.Diagnostics.Eventing.Reader;
 
 namespace presentacion
 {
@@ -60,13 +61,13 @@ namespace presentacion
                 }
                 else
                 {
-                    pictureBox.Load("https://www.pngall.com/wp-content/uploads/2/Upload-PNG-Pic.png");
+                    pictureBox.Load("https://c1.wallpaperflare.com/preview/251/931/705/not-found-404-error-file-not-found-404-file-not-found.jpg");
                 }
 
             }
             catch (Exception ex)
             {
-                pictureBox.Load("https://www.pngall.com/wp-content/uploads/2/Upload-PNG-Pic.png");
+                pictureBox.Load("https://c1.wallpaperflare.com/preview/251/931/705/not-found-404-error-file-not-found-404-file-not-found.jpg");
             }
         }
 
@@ -104,11 +105,7 @@ namespace presentacion
             }
         }
 
-        //Metodo Busqueda Filtro:
-        private void txtFiltro_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         //Con este metodo lanzamos el evento selector de fila y capturamos el valor de la URL imagen:
         private void dataGrid_SelectionChanged_1(object sender, EventArgs e)
@@ -117,6 +114,7 @@ namespace presentacion
             cargarImagen(articulo.ImgUrl);
         }
 
+        //Evento Boton Filtrar Articulos por Campo y Criterio:
         private void btnFiltro_Click(object sender, EventArgs e)
         {
             ControladorArticulo controlador = new ControladorArticulo();
@@ -154,6 +152,76 @@ namespace presentacion
                 MessageBox.Show("Error. No se encuentran Articulos para el Filtro Ingresado." + ex.Message);
                 cargar();
             }
+        }
+
+        //Evento Boton Insertar Articulo:
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            //Abrir Formulario en evento Click:
+            FrmArticulo frmArticulo = new FrmArticulo();
+            frmArticulo.ShowDialog(); //Solo abre una ventana y bloquea
+            cargar(); //refresca la pagina actualizada al cerrar
+        }
+
+        //Evento Boton Actualizar Articulo:
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //Pasamos por parametro los datos del articulo seleccionado:
+            Articulo articulo = (Articulo) dataGrid.CurrentRow.DataBoundItem;
+
+            //Abrir Formulario en evento Click:
+            FrmArticulo frmArticulo = new FrmArticulo(articulo);
+            frmArticulo.ShowDialog(); //Solo abre una ventana y bloquea
+            cargar();
+        }
+
+        //Evento Boton Eliminar Fisico, Se implementa este metodo ya que la BD no se puede Modificar y no tiene Campo Activo para aplicar Delete Logico:
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            ControladorArticulo control = new ControladorArticulo();
+
+            //Seleccionamos el Articulo del Grid:
+            Articulo articulo = (Articulo) dataGrid.CurrentRow.DataBoundItem;
+
+            try
+            {
+                //Permite una segunda validacion de eliminacion:
+                DialogResult respuesta = MessageBox.Show("Estas seguro de continuar con la eliminacion del registro?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (respuesta == DialogResult.Yes)
+                {
+                    control.deleteArticulo(articulo.Id);
+
+                    MessageBox.Show("Registro seleccionado eliminado con Exito");
+
+                    cargar();
+
+                }
+                else
+                {
+                    MessageBox.Show("Se procede a cancelar la operacion de borrado fisico.");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error." + ex.ToString());
+
+            }
+        }
+
+        //Evento Boton mostrar detalle del producto, sin interaccion:
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+            //Pasamos por parametro los datos del articulo seleccionado:
+            Articulo articulo = (Articulo)dataGrid.CurrentRow.DataBoundItem;
+
+            //Abrir Formulario en evento Click:
+            FrmArticulo frmArticulo = new FrmArticulo(articulo, true);
+            frmArticulo.ShowDialog(); //Solo abre una ventana y bloquea
+            cargar();
         }
     }
 }
