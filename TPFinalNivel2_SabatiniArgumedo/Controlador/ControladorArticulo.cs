@@ -91,7 +91,7 @@ namespace Controlador
                 connection = Conexion.Conexion.ConexionBD();
 
                 command.CommandType = System.Data.CommandType.Text;
-                command.CommandText = "SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, a.ImagenUrl, a.Precio, c.Id AS Id_Cat, c.Descripcion AS Categoria, m.Id AS Id_Marc, m.Descripcion AS Modelo FROM ARTICULOS AS a, CATEGORIAS AS c, MARCAS AS m WHERE c.Id = a.IdCategoria AND m.Id = a.IdMarca";
+                command.CommandText = "SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, a.ImagenUrl, a.Precio, c.Id AS Id_Cat, c.Descripcion AS Categoria, m.Id AS Id_Marc, m.Descripcion AS Modelo FROM ARTICULOS AS a INNER JOIN CATEGORIAS AS c ON c.Id = a.IdCategoria INNER JOIN MARCAS AS m ON m.Id = a.IdMarca";
                 command.Connection = connection;
 
                 connection.Open();
@@ -273,7 +273,7 @@ namespace Controlador
             {
 
 
-                string consulta = "SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, a.ImagenUrl, a.Precio, c.Id AS Id_Cat, c.Descripcion AS Categoria, m.Id AS Id_Marc, m.Descripcion AS Modelo FROM ARTICULOS AS a, CATEGORIAS AS c, MARCAS AS m WHERE c.Id = a.IdCategoria AND m.Id = a.IdMarca AND ";
+                string consulta = "SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, a.ImagenUrl, a.Precio, c.Id AS Id_Cat, c.Descripcion AS Categoria, m.Id AS Id_Marc, m.Descripcion AS Modelo FROM \r\nARTICULOS AS a INNER JOIN CATEGORIAS AS c ON c.Id = a.IdCategoria INNER JOIN MARCAS AS m ON m.Id = a.IdMarca WHERE ";
 
                 //Verificamos todas las combinaciones posibles del ComboBox para completar Script:
                 if (campo == "Codigo")
